@@ -1,21 +1,20 @@
+#libraries used
 import re
 import os
 import json
 import random
 import time
 import statistics
-
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import silhouette_score
-
 from SoccerNet.Downloader import getListGames, SoccerNetDownloader
 from SoccerNet.utils import getListGames
 
+#start time to execute/run code
 start = time.time()
 
 # Get list of training games
@@ -89,11 +88,17 @@ file_path = "/Users/mohannadhosam/Documents/BachelorThesisProject/count_no_frame
 with open(file_path) as f:
     data = [list(map(int, line.strip().split())) for line in f]
 
+#getting max number from the list
 max_numbers = [max(line) for line in data]
 
+#plotting the actual graph from the obtained max numbers
 plt.hist(max_numbers, bins=30, edgecolor='black')
 plt.show()
 
+
+
+#end time to execute/run code
 end = time.time()
 
+#Print the execution run time
 print(end - start)
