@@ -1,4 +1,4 @@
-# Towards Better Feature Extraction of Video Frames for Deep Learning Applications 
+# Towards Better Feature Extraction of Video Frames for Deep Learning Applications | German Unviersity in Cairo 
 
 
 ## Description
