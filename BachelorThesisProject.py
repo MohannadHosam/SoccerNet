@@ -1,20 +1,17 @@
 #libraries used
 import re
-import SoccerNet
 from SoccerNet.Downloader import SoccerNetDownloader
 import numpy as np
 from sklearn.cluster import KMeans
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 from matplotlib import pyplot as plt
-import json
 from SoccerNet.utils import getListGames
-import random
 import os
 import time
-import statistics
 from SoccerNet.Downloader import getListGames
 from SoccerNet.Downloader import SoccerNetDownloader
+
 start = time.time()
 
 ###################################################################################################
